@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Anasayfa.master.cs" Inherits="EvcilHayvanWeb.Anasayfa" %>
+
+<asp:ContentPlaceHolder ID="head" runat="server">
+</asp:ContentPlaceHolder>
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İlanları Görüntüle</title>
+    <link rel="stylesheet" href="<%= ResolveUrl("~/css/main.css") %>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div>
+
+        <header id="anasayfa" class="fullscreen-header">
+            <form runat="server">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <nav class="nav">
+                        <img class="site-logo" src="<%= ResolveUrl("~/img/catdog.png") %>" alt="Kedi Logo" width="150" height="125" />
+
+                        <ul class="nav__list">
+                            <li><a href="#anasayfa" class="nav__list-item btn">Ana Sayfa</a></li>
+                            <li><a href="Login.aspx" class="nav__list-item btn">Giriş Yap</a></li>
+                        </ul>
+                    </nav>
+                </asp:ContentPlaceHolder>
+
+            </form>
+        </header>
+        <main>
+        </main>
+    </div>
+</body>
+</html>

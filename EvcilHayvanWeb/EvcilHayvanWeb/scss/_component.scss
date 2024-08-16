@@ -1,0 +1,65 @@
+.header-title{
+    font-size: 2rem;
+    color: white;
+    animation: soldanGelenYazi 1s;
+}
+
+.header-subtitle{
+    font-size: 1rem;
+    color: rgb(252, 252, 252);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    animation: sagdanGelenYazi 1s;
+}
+
+.btn{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(255, 111, 111);
+    border-radius: 10000px;
+    padding: .25rem 1rem;
+    border: none;
+    &:hover{
+    color: white;
+    background-color: rgb(255, 111, 111);
+    }
+    animation: ortayaCik 1s;
+}
+
+.icon-asagi{
+    position: absolute;
+    width: 2.5rem;
+    bottom: 1rem;
+    animation: ortayaCik2 1s alternate infinite;
+}
+
+.ozel-kart{
+    text-align: center;
+    padding: 1rem;
+    margin:.5rem 1rem;
+    border:1px solid black;
+    border-radius: .5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: 0.5s ease-in-out;
+    flex: 1;
+    
+
+    &:hover{
+        transform: scale(1.1);
+    }
+
+    &--ozel1{
+        background-image:url(/img/köpke.png);
+        background-size:170px 170px;
+    }
+    &--ozel2{
+        background-image:url(/img/kara.png);
+        background-size: 170px 170px;
+    }
+    &--ozel3{
+        background-image:url(/img/kus.png);
+        background-size: 170px 170px;
+    }
+}

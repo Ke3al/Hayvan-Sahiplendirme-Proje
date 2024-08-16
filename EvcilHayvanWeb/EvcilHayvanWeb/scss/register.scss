@@ -1,0 +1,84 @@
+@import 'mixins';
+
+@import 'reset.scss';
+@import 'animations';
+@import 'layouts';
+@import 'component';
+
+
+.btn-kart{
+    font-size: 1.1rem;
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+    
+    text-decoration: none;
+    color: white;
+    background-color: rgb(255, 111, 111);
+    border-radius: 10000px;
+    padding: .25rem 1rem;
+    border: none;
+}
+
+.containersignin, .label{
+    color: white;
+}
+
+
+.mail{
+    max-width: 900px;
+    margin: 0 auto;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    margin-top: .25rem;
+    margin-bottom: .75rem;
+    outline: none;
+    border: 1px solid rgb(255, 111, 111);
+    border-radius: .25rem;
+    padding: .5rem;
+    color: inherit;
+    resize: none;
+    &:hover, &:focus{
+    border-color: rgb(255, 111, 111);
+    box-shadow: 0 0 10px 1px rgb(255, 111, 111);
+   }
+}
+
+.sifre{
+    max-width: 900px;
+    margin: 0 auto;
+    color: gray;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    margin-top: .25rem;
+    margin-bottom: .75rem;
+    outline: none;
+    border: 1px solid rgb(255, 111, 111);
+    border-radius: .25rem;
+    padding: .5rem;
+    color: inherit;
+    resize: none;
+    &:hover, &:focus{
+    border-color: rgb(255, 111, 111);
+    box-shadow: 0 0 10px 1px rgb(255, 111, 111);
+   }
+}
+.registerbtn{
+    font-size: 1.1rem;
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+    
+    text-decoration: none;
+    color: white;
+    background-color: rgb(255, 111, 111);
+    border-radius: 10000px;
+    padding: .25rem 1rem;
+    border: none;
+}
+
+.loginbtn{
+    text-decoration: none;
+    color: white;
+    margin-left: 0.7rem;
+}

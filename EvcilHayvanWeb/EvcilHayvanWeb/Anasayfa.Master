@@ -1,0 +1,142 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Anasayfa.master.cs" Inherits="EvcilHayvanWeb.Anasayfa" %>
+
+<asp:ContentPlaceHolder ID="head" runat="server">
+</asp:ContentPlaceHolder>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="<%= ResolveUrl("~/css/main.css") %>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header id="anasayfa" class="fullscreen-header">
+
+        <nav class="nav">
+            <img class="site-logo" src="<%= ResolveUrl("~/img/catdog.png") %>" alt="Kedi Logo" width="150" height="125" />
+
+            <ul class="nav__list">
+                <li><a href="#anasayfa" class="nav__list-item btn">Ana Sayfa</a></li>
+                <li><a href="Login.aspx" class="nav__list-item btn">Giriş Yap</a></li>
+                <li><a href="#iletisim" class="nav__list-item btn">İletişim</a></li>
+            </ul>
+        </nav>
+
+        <h1 class="header-title">Paw Mate</h1>
+        <h3 class="header-subtitle">Kayıp dostun burada</h3>
+        <a class="btn" href="UyeDisi.aspx">Dostunu bul</a>
+        <img id="hakkimizda" class="icon-asagi" src="<%= ResolveUrl("~/img/down.png") %>" alt="icon-asagi" />
+    </header>
+    <main>
+        <section class="section">
+            <h2 class="section-title">Kuruluş Sebebi</h2>
+            <div class="hakkimizda-grid">
+                <div class="hakkimizda-grid__item">
+
+                    <img src="img/pati.png" width="70"
+                        height="70" alt="Pati" class="hakkimda-grid__resim">
+
+                    <p class="hakkimizda-grid__yazi">
+                        Hayvan sahiplendirme sitesi projemin temel amacı, evsiz ve terk edilmiş hayvanlara kalıcı ve sevgi dolu bir yuva bulmak için bir platform sağlamaktır. Bu platform, sahiplendirme sürecini kolaylaştırarak hem hayvanları hem de potansiyel sahipleri desteklemeyi hedeflemektedir.
+                    </p>
+
+                </div>
+
+                <div class="hakkimizda-grid__item">
+
+                    <img src="img/pati.png" width="70"
+                        height="70" alt="Pati" class="hakkimda-grid__resim">
+
+                    <p class="hakkimizda-grid__yazi">
+                        Projemin öncelikli amacı, evcil hayvan sahiplenmek isteyenleri, uygun ve sevgi dolu bir arkadaş bulmaları için kaynaklarla buluşturmaktır. Ayrıca, sahiplendirme sürecinin adım adım yönetilmesini sağlayarak, sahiplenme kararı veren kişilere rehberlik etmeyi ve bilgilendirmeyi amaçlıyoruz.
+                    </p>
+
+                </div>
+
+                <div class="hakkimizda-grid__item">
+
+                    <img src="img/pati.png" width="70"
+                        height="70" alt="Pati" class="hakkimda-grid__resim">
+
+                    <p class="hakkimizda-grid__yazi">
+                        Projem, evcil hayvan sahiplendirme sürecini kolaylaştırarak hem hayvanların hem de insanların yaşamlarını olumlu yönde etkilemeyi amaçlamaktadır. Bu sayede, daha fazla hayvanın mutlu bir yuva bulmasına ve daha fazla insanın sevgi dolu bir evcil dost edinmesine katkı sağlamayı hedefliyoruz.
+                    </p>
+
+                </div>
+
+                <div class="hakkimizda-grid__item">
+
+                    <img src="img/pati.png" width="70"
+                        height="70" alt="Pati" class="hakkimda-grid__resim">
+
+                    <p class="hakkimizda-grid__yazi">
+                        Kullanıcı dostu bir arayüz ve kapsamlı bir veritabanı üzerinde çalışarak, evsiz hayvanları bulundukları durumdan kurtararak yeni bir yuva bulmalarını sağlamak için bir platform oluşturuyoruz. Şu anda, kullanıcı geri bildirimlerini topluyor ve sahiplendirme sürecini hem hayvanlar hem de sahipler için en iyi şekilde destekleyecek özellikleri hayata geçirmek için çaba harcıyoruz.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section section--accent">
+            <div class="ozel-container">
+                <div class="ozel-kart ozel-kart--ozel1">
+                    <h3 class="ozel-kart__ad">Köpek</h3>
+                    <p class="ozel-kart__yazi">Köpekler Bir Patilerini Daha Çok Kullanırlar.İnsanlar da köpekler gibi bir ellerini diğerine göre daha fazla kullanmaktadırlar.</p>
+                    <div class="btn-kopek">
+                        <a href="#">
+                            <button class="btn-kart">Ara </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="ozel-kart ozel-kart--ozel2">
+                    <h3 class="ozel-kart__ad">Kedi</h3>
+                    <p class="ozel-kart__yazi">Genetik sentez yapıları ve organ fonksiyonları kedilerin deniz suyunu içmelerine imkan verebilir. Gelişmiş böbrek yapıları deniz suyunu kolayca filtreleyebilir.</p>
+                    <div class="btn-kedi">
+                        <a href="#">
+                            <button class="btn-kart">Ara </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="ozel-kart ozel-kart--ozel3">
+                    <h3 class="ozel-kart__ad">Kuş</h3>
+                    <p class="ozel-kart__yazi">Vahşi doğada kuzgunlar insan diline pek hakim olmasa da evcilleştirilen kuzgunlar insan konuşmalarını taklit edebiliyor. Hatta bazı papağan türlerinden bile daha iyi taklit yaptıkları da biliniyor.</p>
+                    <div class="btn-kus">
+                        <a href="#">
+                            <button class="btn-kart">Ara</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 id="iletisim" class="section-title">Iletisim</h2>
+            <form id="form1" runat="server">
+                <label class="form-label" for="ad">Adınız</label>
+                <asp:TextBox ID="txtAd" CssClass="form-input" runat="server"></asp:TextBox>
+
+                <label class="form-label" for="email">Email</label>
+                <asp:TextBox ID="txtemail" CssClass="form-input" runat="server"></asp:TextBox>
+
+                <label class="form-label" for="mesaj">Mesajınız</label>
+                <asp:TextBox ID="txtmesaj" Height="200px" CssClass="form-input" runat="server"></asp:TextBox>
+
+                <div class="btn-container">
+                    <asp:Button ID="Button1" CssClass="btn btn-kare" runat="server" OnClick="Button1_Click" Text="Gönder" />
+                </div>
+            </form>
+
+        </section>
+    </main>
+</body>
+</html>

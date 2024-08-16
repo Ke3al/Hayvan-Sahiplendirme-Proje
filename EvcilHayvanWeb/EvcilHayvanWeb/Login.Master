@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Login.master.cs" Inherits="EvcilHayvanWeb.Login" %>
+
+
+<asp:ContentPlaceHolder ID="head" runat="server">
+</asp:ContentPlaceHolder>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Yap</title>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="<%= ResolveUrl("~/css/register.css") %>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header id="anasayfa" class="fullscreen-header">
+
+        <nav class="nav">
+            <img class="site-logo" src="img/catdog.png" alt="Kedi Logo" width="150px" height="125px">
+
+            <ul class="nav__list">
+                <li><a href="Default.aspx" class="nav__list-item btn">Ana Sayfa</a></li>
+                <li><a href="Default.aspx#hakkimizda" class="nav__list-item btn">Hakkımızda</a></li>
+                <li><a href="Default.aspx#iletisim" class="nav__list-item btn">İletişim</a></li>
+            </ul>
+        </nav>
+
+        <h1 class="header-title">Paw Mate</h1>
+        <h3 class="header-subtitle">Kayıp dostun burada</h3>
+
+
+        <form runat="server">
+            <div class="container">
+                <h1 class="label">Giriş Yap</h1>
+
+                <label class="label" for="email"><b>Email</b></label>
+                <asp:TextBox ID="txtMail" runat="server" placeholder="E-Mail" CssClass="mail"></asp:TextBox>
+
+
+                <label class="label" for="psw"><b>Şifre</b></label>
+                <asp:TextBox ID="txtSifre" runat="server" placeholder="Şifre" CssClass="sifre"></asp:TextBox>
+
+                <asp:Button ID="Button1" runat="server" Text="Giriş Yap" OnClick="Button1_Click" CssClass="registerbtn"/>
+            </div>
+
+            <div class="containersignin">
+                <p>Bir hesabın yok mu ? <a href="Register.aspx"">Üye Ol</a></p>
+                <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+            </div>
+        </form>
+
+    </header>
+
+    <main>
+    </main>
+</body>
+</html>
